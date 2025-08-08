@@ -68,6 +68,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // CVTE acceleration AARs (ensure the files exist under app/libs)
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
     implementation(files("libs/lib-accelerated-drawing-base-0.9.162.aar"))
     implementation(files("libs/lib-write-predict-0.0.28.aar"))
 }

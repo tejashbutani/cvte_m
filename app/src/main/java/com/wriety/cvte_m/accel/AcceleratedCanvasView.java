@@ -18,7 +18,7 @@ public class AcceleratedCanvasView extends View {
     private Canvas backCanvas;
 
     private AcceleratedRenderer renderer;
-    private boolean useAcceleration = false;
+    private boolean useAcceleration = true;
 
     private float lastX, lastY;
     private final Rect dirtyRect = new Rect();
